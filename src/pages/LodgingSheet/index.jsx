@@ -1,5 +1,3 @@
-import React from 'react'
-
 function LodgingSheet() {
   return (
     <div className="LodgingSheet">

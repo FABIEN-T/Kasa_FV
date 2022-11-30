@@ -1,9 +1,6 @@
 // import styled from 'styled-components'
-import React from 'react'
-// import colors from '../../utils/style/color'
+// import React from 'react'
 import LogoWhite from '../../assets/LOGO_Kasa_White.svg'
-import '../../index.css'
-
 // const FooterWrapper = styled.div`
 //   display: flex;
 //   flex-direction: column;
@@ -29,7 +26,7 @@ function Footer() {
     // </FooterWrapper>
     <div className="footer">
       <img src={LogoWhite} alt="logo" />
-      <p>© 2020 Kasa. All rights reserved</p>
+      <p className="footerCopyrights">© 2020 Kasa. All rights reserved</p>
     </div>
   )
 }

@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
-import React from 'react'
+// import React from 'react'
 // import styled from 'styled-components'
 // import colors from '../../utils/style/color'
 // import Logo from '../../assets/LOGO_Kasa.svg'
 // import { StyledLink } from '../../utils/style/Atoms'
+
 import LogoRed from '../../assets/LOGO_Kasa.svg'
 
 // const NavContainer = styled.div`
@@ -22,35 +23,52 @@ import LogoRed from '../../assets/LOGO_Kasa.svg'
 
 function Header() {
   return (
-    <nav>
-      <img src={LogoRed} alt="logo" />
+    <nav className="header">
+      <img src={LogoRed} alt="logo" className="headerLogo" />
       {/* <HeadLogo src={Logo} alt="logo" /> */}
-      <Link to="/">Accueil</Link>
-      <Link to="/about">A propos</Link>
+      <div className="headerDivLink">
+        <Link to="/" className="headerLink">
+          Accueil
+        </Link>
+        <Link to="/about" className="headerLink">
+          A propos
+        </Link>
+      </div>
     </nav>
-
-    // <NavContainer>
-    //   <Link to="/">
-    //     <HomeLogo src={DarkLogo} alt="logo" />
-    //   </Link>
-    //   <nav>
-    //     {/* <Link to="/" className="Header">
-    //     Accueil
-    //   </Link> */}
-    //     <StyledLink to="/">Accueil</StyledLink>
-    //     {/* <Link to="/freelances" className="Header">
-    //     Profils
-    //   </Link> */}
-    //     <StyledLink to="/freelances">Profils</StyledLink>
-    //     {/* <Link to="/survey/1" className="Header">
-    //     Questionnaire
-    //   </Link> */}
-    //     <StyledLink to="/survey/1" $isFullLink>
-    //       Faire le test
-    //     </StyledLink>
-    //   </nav>
-    // </NavContainer>
   )
 }
+
+// function Header() {
+//   return (
+//     <nav>
+//       <img src={LogoRed} alt="logo" />
+//       {/* <HeadLogo src={Logo} alt="logo" /> */}
+//       <Link to="/">Accueil</Link>
+//       <Link to="/about">A propos</Link>
+//     </nav>
+
+//     // <NavContainer>
+//     //   <Link to="/">
+//     //     <HomeLogo src={DarkLogo} alt="logo" />
+//     //   </Link>
+//     //   <nav>
+//     //     {/* <Link to="/" className="Header">
+//     //     Accueil
+//     //   </Link> */}
+//     //     <StyledLink to="/">Accueil</StyledLink>
+//     //     {/* <Link to="/freelances" className="Header">
+//     //     Profils
+//     //   </Link> */}
+//     //     <StyledLink to="/freelances">Profils</StyledLink>
+//     //     {/* <Link to="/survey/1" className="Header">
+//     //     Questionnaire
+//     //   </Link> */}
+//     //     <StyledLink to="/survey/1" $isFullLink>
+//     //       Faire le test
+//     //     </StyledLink>
+//     //   </nav>
+//     // </NavContainer>
+//   )
+// }
 
 export default Header

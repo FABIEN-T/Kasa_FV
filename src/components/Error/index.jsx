@@ -1,6 +1,6 @@
 // import styled from 'styled-components'
 // import colors from '../../utils/style/color'
-import React from 'react'
+// import React from 'react'
 // const ErrorWrapper = styled.div`
 //   margin: 30px;
 //   display: flex;
