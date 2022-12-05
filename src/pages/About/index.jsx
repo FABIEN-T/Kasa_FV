@@ -1,7 +1,7 @@
 // import { Link } from 'react-router-dom'
 import MountainPhoto from '../../assets/gustavo-alves-YOXSC4zRcxw-unsplash 1.jpg'
 // import chevronDown from '../../assets/chevronDown.svg'
-import chevronUp from '../../assets/chevronUp.svg'
+import Chevron from '../../assets/chevronDown.svg'
 
 function About() {
   return (
@@ -19,7 +19,7 @@ function About() {
         <div className="aboutCollapse">
           <div className="aboutCollapseHeader">
             <h2>Fiabilité</h2>
-            <img src={chevronUp} alt="chevronUp" className="chevron" />
+            <img src={Chevron} alt="chevron" className="chevron" />
           </div>
           <div className="aboutCollapseParagrah">
             <p>
@@ -28,11 +28,13 @@ function About() {
               informations sont régulièrement vérifiées par nos équipes.
             </p>
           </div>
+          {/* <div className="band"></div> */}
         </div>
+
         <div className="aboutCollapse">
           <div className="aboutCollapseHeader">
             <h2>Respect</h2>
-            <img src={chevronUp} alt="chevronUp" className="chevron" />
+            <img src={Chevron} alt="chevron" className="chevron" />
           </div>
           <div className="aboutCollapseParagrah">
             <p>
@@ -46,7 +48,7 @@ function About() {
         <div className="aboutCollapse">
           <div className="aboutCollapseHeader">
             <h2>Service</h2>
-            <img src={chevronUp} alt="chevronUp" className="chevron" />
+            <img src={Chevron} alt="chevron" className="chevron" />
           </div>
           <div className="aboutCollapseParagrah">
             <p>
@@ -60,7 +62,7 @@ function About() {
         <div className="aboutCollapse">
           <div className="aboutCollapseHeader">
             <h2>Sécurité</h2>
-            <img src={chevronUp} alt="chevronUp" className="chevron" />
+            <img src={Chevron} alt="chevron" className="chevron" />
           </div>
           <div className="aboutCollapseParagrah">
             <p>

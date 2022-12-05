@@ -7,6 +7,7 @@
 
 @import '../pages/pageHeader';
 @import '../pages/Home/homeMain';
+@import '../pages/LodgingSheet/lodgingSheet';
 @import '../pages/About/about';
 
 /* Lien des polices google */
@@ -22,7 +23,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: auto;
-    // background-color: bisque;
+    background-color: bisque;
     max-width: 1240px;
     margin: auto;
     // border: 1px solid green;
