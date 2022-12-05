@@ -1,0 +1,29 @@
+.mainError {
+  margin: 72px auto 0px;
+  //   border: 1px solid blue;
+  text-align: center;
+  h1 {
+    margin: 0 auto 36px;
+    // background-color: aquamarine;
+    font: {
+      size: 288px;
+      weight: 700;
+    }
+  }
+  p {
+    margin: 0 auto 168px;
+    font: {
+      size: 36px;
+      weight: 500;
+    }
+  }
+  .errorLink {
+    // background-color: cadetblue;
+    margin: 0;
+    color: $primary;
+    font: {
+      size: 18px;
+      weight: 500;
+    }
+  }
+}

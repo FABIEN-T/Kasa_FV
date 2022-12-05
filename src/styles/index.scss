@@ -3,18 +3,30 @@
 @import './variables';
 @import '../components/Header/header';
 @import '../components/Footer/footer';
+@import '../components/Error/error';
 
-@import '../pages/Home/home';
+@import '../pages/pageHeader';
+@import '../pages/Home/homeMain';
+@import '../pages/About/about';
 
 /* Lien des polices google */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 body {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
-  margin: auto;
+  color: $primary;
   box-sizing: border-box;
-  max-width: 1240px;
-  // background-color: $primary;
+
+  .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    // background-color: bisque;
+    max-width: 1240px;
+    margin: auto;
+    // border: 1px solid green;
+  }
 }
 
 // @import './utils/variables';

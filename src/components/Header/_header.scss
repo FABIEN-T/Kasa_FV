@@ -3,9 +3,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(211, 211, 211);
+  // background-color: rgb(211, 211, 211);
   height: fit-content;
   margin-top: 40px;
+  margin-bottom: 64px;
   .headerLogo {
     height: 68px;
   }
@@ -18,6 +19,9 @@
       color: $primary;
       margin-left: 20px;
       text-decoration: none;
+    }
+    .headerLink:hover {
+      text-decoration-line: underline;
     }
   }
 }
