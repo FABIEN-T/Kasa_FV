@@ -3,12 +3,12 @@ import MountainPhoto from '../../assets/gustavo-alves-YOXSC4zRcxw-unsplash 1.jpg
 
 function About() {
   return (
-    <div className="home">
-      <header className="homeHeader">
-        <div className="homeTitle">
+    <div>
+      <header className="pageHeader">
+        <div className="pageTitle">
           <h1> </h1>
         </div>
-        <div className="homeHeaderImg">
+        <div className="pageHeaderImg">
           <img src={MountainPhoto} alt="littoral" />
         </div>
       </header>

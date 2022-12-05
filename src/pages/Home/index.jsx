@@ -6,12 +6,12 @@ import LodgingPhotoB from '../../assets/accommodation-1-1.jpg'
 
 function Home() {
   return (
-    <div className="home">
-      <header className="homeHeader">
-        <div className="homeTitle">
+    <div>
+      <header className="pageHeader">
+        <div className="pageTitle">
           <h1>Chez vous, partout et ailleurs</h1>
         </div>
-        <div className="homeHeaderImg">
+        <div className="pageHeaderImg">
           <img src={LittoralPhoto} alt="littoral" />
         </div>
       </header>
