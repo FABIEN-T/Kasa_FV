@@ -1,9 +1,11 @@
 @import './normalize';
 
 @import './variables';
+
 @import '../components/Header/header';
 @import '../components/Footer/footer';
 @import '../components/Error/error';
+@import '../components/Tags/tags';
 
 @import '../pages/pageHeader';
 @import '../pages/Home/homeMain';
@@ -23,23 +25,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: auto;
-    background-color: bisque;
+    // background-color: bisque;
     max-width: 1240px;
     margin: auto;
     // border: 1px solid green;
   }
 }
-
-// @import './utils/variables';
-
-// // @import './vendors/normalize';
-
-// @import './base/base';
-
-// @import './components/error';
-// @import './components/header';
-// @import './components/footer';
-
-// @import './pages/home';
-// @import './pages/about';
-// @import './pages/lodgingSheet';

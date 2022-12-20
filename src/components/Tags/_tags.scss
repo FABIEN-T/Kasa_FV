@@ -1,0 +1,19 @@
+.tagsDiv {
+  display: flex;
+  flex-wrap: wrap;
+  // margin-bottom: 12px;
+  .tag {
+    display: flex;
+    padding: 0px 22px;
+    span {
+      margin: auto;
+    }
+    height: 25px;
+    width: fit-content;
+    margin-right: 10px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    color: $fontColorLight;
+    background-color: $primary;
+  }
+}

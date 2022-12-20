@@ -1,56 +1,66 @@
+import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+import lodgingData from '../../datas/logements.json'
 import Lodging from '../../assets/Background.jpg'
 import Profil from '../../assets/profile-picture-12.jpg'
 // import starGrey from '../../assets/starGrey.svg'
+import Tags from '../../components/Tags'
+import Rating from '../../components/Rating'
 import starRed from '../../assets/starRed.svg'
 import Chevron from '../../assets/chevronDown.svg'
 
 function LodgingSheet() {
+  const { id } = useParams()
+  const lodgingSheetSelected = lodgingData.find((lodging) => lodging.id === id)
+  // console.log('lodgingId', id)
+  // console.log('lodgingSheetId', lodgingSheetId)
+
+  const {
+    title,
+    cover,
+    pictures,
+    description,
+    host,
+    rating,
+    location,
+    equipments,
+    tags,
+  } = lodgingSheetSelected
+
   return (
     <div className="lodgingSheet">
       <div className="lodgingPhoto">
-        <img src={Lodging} alt="appartement" />
+        <img src={pictures[0]} alt="appartement" />
       </div>
+      {/* <lodgingHeader /> */}
       <header className="lodgingSheetHeader">
         <div className="headerLeft">
-          <h1>Cozy loft on the Canal Saint-Martin</h1>
-          <p>Paris, Île-de-France</p>
+          <h1>{title}</h1>
+          <p>{location}</p>
         </div>
         <div className="headerRight">
           <div className="nameSeller">
-            <p>Alexandra</p>
-            <p>Dumas</p>
+            <p>{host.name.split(' ')[0]}</p>
+            <p>{host.name.split(' ')[1]}</p>
           </div>
           <div className="photoSeller">
-            <img src={Profil} alt="Profil" />
+            <img src={host.picture} alt={host.name} />
           </div>
         </div>
       </header>
       <div className="tagsScore">
-        <div className="tagsDiv">
-          <div className="tag">
-            <span>Cozy</span>
-          </div>
-          <div className="tag">
-            <span>Canal</span>
-          </div>
-          <div className="tag">
-            <span>Paris</span>
-          </div>
-        </div>
-        <div className="score">
-          <img src={starRed} alt="score" />
-          <img src={starRed} alt="score" />
-          <img src={starRed} alt="score" />
-          <img src={starRed} alt="score" />
-          <img src={starRed} alt="score" />
-        </div>
+        <Tags tags={tags} />
+        <Rating rating={rating} />
       </div>
+
       <div className="details">
+        {/* <Collapse description={description} typeFormat={paragraph} /> */}
         <div className="aboutCollapse">
           <div className="aboutCollapseHeader">
             <h2>Description</h2>
             <img src={Chevron} alt="chevron" className="chevron" />
           </div>
+
           <div className="aboutCollapseParagrah">
             <p>
               Vous serez à 50m du canal Saint-martin où vous pourrez
@@ -61,7 +71,7 @@ function LodgingSheet() {
             </p>
           </div>
         </div>
-
+        {/* <Collapse description={description} typeFormat={paragraph} /> */}
         <div className="aboutCollapse">
           <div className="aboutCollapseHeader">
             <h2>Équipements</h2>

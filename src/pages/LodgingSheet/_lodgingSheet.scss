@@ -25,7 +25,7 @@
       display: flex;
       flex-direction: column;
       h1 {
-        border: 1px solid blue;
+        // border: 1px solid blue;
         // color: aqua;
         margin: 0 0 5px;
         font: {
@@ -34,7 +34,7 @@
         }
       }
       p {
-        border: 1px solid green;
+        // border: 1px solid green;
         margin: 0;
         font: {
           size: 18px;
@@ -46,11 +46,12 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      border: 1px solid blue;
+      // border: 1px solid blue;
       margin-top: -5px;
       .nameSeller {
-        border: 1px solid green;
+        // border: 1px solid green;
         text-align: end;
+        line-height: 21px;
         p {
           margin: 0;
           font: {
@@ -60,6 +61,7 @@
         }
       }
       .photoSeller {
+        margin-left: 10px;
         width: 64px;
         height: 64px;
         img {
@@ -75,29 +77,34 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 20px;
-    .tagsDiv {
-      display: flex;
-      .tag {
-        display: flex;
-        span {
-          margin: auto;
-        }
-        height: 25px;
-        width: 115px;
-        // vertical-align: middle;
-        // display: table-cell;
-        margin-right: 10px;
-        border-radius: 10px;
-        color: $fontColorLight;
-        background-color: $primary;
-      }
-    }
+    align-items: end;
+    // border: 1px solid blue;
+    margin: 20px 0 12px;
+    // .tagsDiv {
+    //   display: flex;
+    //   .tag {
+    //     display: flex;
+    //     span {
+    //       margin: auto;
+    //     }
+    //     height: 25px;
+    //     width: 115px;
+    //     // vertical-align: middle;
+    //     // display: table-cell;
+    //     margin-right: 10px;
+    //     border-radius: 10px;
+    //     color: $fontColorLight;
+    //     background-color: $primary;
+    //   }
+    // }
+    // .score {
+    //   padding-top: 10px;
+    // }
   }
 }
 
 .details {
-  background-color: aquamarine;
+  // background-color: aquamarine;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -156,7 +163,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        line-height: 26px;
+        line-height: 21px;
       }
     }
     // .band {

@@ -23,5 +23,8 @@
     .headerLink:hover {
       text-decoration-line: underline;
     }
+    .headerLink.active {
+      text-decoration-line: underline;
+    }
   }
 }

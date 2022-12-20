@@ -27,11 +27,11 @@
     .cardTitle {
       position: absolute;
       z-index: 5;
-      margin: 20px;
+      margin: 20px 20px;
       bottom: 0px;
       min-width: 300px;
-      min-height: 50px;
-      border: 1px red solid;
+      height: 50px;
+      // border: 1px red solid;
       h2 {
         z-index: 5;
         color: $fontColorLight;
@@ -41,6 +41,7 @@
           weight: 500;
         }
         margin: 0;
+        line-height: 26px;
       }
     }
 

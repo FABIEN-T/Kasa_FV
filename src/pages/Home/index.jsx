@@ -1,10 +1,10 @@
-// import React from 'react'
-
+import React from 'react'
+import lodgingData from '../../datas/logements.json'
+import HomeCard from '../../components/HomeCard'
 import LittoralPhoto from '../../assets/IMG.jpg'
-import LodgingPhoto from '../../assets/accommodation-20-1.jpg'
-import LodgingPhotoB from '../../assets/accommodation-1-1.jpg'
 
 function Home() {
+  console.log('lodgingData[0].title', lodgingData[0].title)
   return (
     <div>
       <header className="pageHeader">
@@ -16,62 +16,11 @@ function Home() {
         </div>
       </header>
 
-      <main className="mainHome">
-        <div className="card">
-          <div className="cardTitle">
-            <h2>Titre de la location</h2>
-          </div>
-          <div className="cardGradient"></div>
-          <div className="cardPhoto">
-            <img src={LodgingPhoto} alt="Logement" />
-          </div>
-        </div>
-        <div className="card">
-          <div className="cardTitle">
-            <h2>Titre de la location</h2>
-          </div>
-          <div className="cardGradient"></div>
-          <div className="cardPhoto">
-            <img src={LodgingPhotoB} alt="Logement" />
-          </div>
-        </div>
-        <div className="card">
-          <div className="cardTitle">
-            <h2>Titre de la location</h2>
-          </div>
-          <div className="cardGradient"></div>
-          <div className="cardPhoto">
-            <img src={LodgingPhotoB} alt="Logement" />
-          </div>
-        </div>
-        <div className="card">
-          <div className="cardTitle">
-            <h2>Titre de la location</h2>
-          </div>
-          <div className="cardGradient"></div>
-          <div className="cardPhoto">
-            <img src={LodgingPhotoB} alt="Logement" />
-          </div>
-        </div>
-        <div className="card">
-          <div className="cardTitle">
-            <h2>Titre de la location</h2>
-          </div>
-          <div className="cardGradient"></div>
-          <div className="cardPhoto">
-            <img src={LodgingPhotoB} alt="Logement" />
-          </div>
-        </div>
-        <div className="card">
-          <div className="cardTitle">
-            <h2>Titre de la location</h2>
-          </div>
-          <div className="cardGradient"></div>
-          <div className="cardPhoto">
-            <img src={LodgingPhotoB} alt="Logement" />
-          </div>
-        </div>
-      </main>
+      <ul className="mainHome">
+        {lodgingData.map(({ id, title, cover }) => (
+          <HomeCard id={id} title={title} cover={cover} />
+        ))}
+      </ul>
     </div>
   )
 }
