@@ -1,5 +1,9 @@
 .lodgingSheet {
-  .lodgingPhoto {
+  .carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 415px;
     border-radius: 25px;
@@ -9,10 +13,59 @@
       //   flex: 1;
       width: 100%;
       height: 100%;
+      // display: table-cell;
       //   overflow: hidden;
       object-fit: cover;
       object-position: center;
     }
+    // .arrows {
+    //   // display: table;
+    //   // z-index: 10;
+    //   left: 0px;
+    //   top: 0px;
+    //   width: 100%;
+    //   height: 100%;
+    //   border: red solid 1px;
+
+    button {
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      top: 150px;
+      // border: none;
+    }
+    // .img {
+    //   height: 79px;
+    // }
+    .arrowNext {
+      position: absolute;
+      height: 79px;
+      width: 47px;
+      // display: table-cell;
+      // vertical-align: middle;
+      top: 40%;
+      right: 23px;
+      z-index: 10;
+      cursor: pointer;
+      user-select: none;
+    }
+    .arrowPrevious {
+      position: absolute;
+      height: 79px;
+      width: 47px;
+      // display: table-cell;
+      // vertical-align: middle;
+      top: 40%;
+      left: 23px;
+      z-index: 10;
+      cursor: pointer;
+      user-select: none;
+    }
+    .image {
+      min-width: 100%;
+      height: 100%;
+    }
+    // }
   }
 
   .lodgingSheetHeader {

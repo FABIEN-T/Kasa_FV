@@ -17,4 +17,3 @@ function Rating({ rating }) {
 }
 
 export default Rating
-// <span key={rangeElement.toString()}>{starRed}</span>
