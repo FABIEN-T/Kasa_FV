@@ -6,35 +6,63 @@ function Carousel({ pictures }) {
   const [current, setCurrent] = useState(0)
   const length = pictures.length
 
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1)
+  }
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1)
+  }
+
+  // console.log('current', current)
+
+  // if (Array.isArray(pictures) || pictures.length <= 0) {
+  //   return null
+  // }
+
   return (
     <section className="carousel">
       {/* <button className="arrowNext"> */}
-      <img
-        src={arrowPrevious}
-        alt="arrowPrevious_vector"
-        className="arrowPrevious"
-        // onClick={prevSlide}
-      />
-      <img
-        src={arrowNext}
-        alt="arrowNext_vector"
-        className="arrowNext"
-        // onClick={nextSlide}
-      />
+      {pictures.length >= 2 ? (
+        <div>
+          <img
+            src={arrowPrevious}
+            alt="arrow Previous"
+            className="arrowPrevious"
+            onClick={prevSlide}
+          />
+          <img
+            src={arrowNext}
+            alt="arrow Next"
+            className="arrowNext"
+            onClick={nextSlide}
+          />
+        </div>
+      ) : null}
+
+      <p>
+        {current + 1}/{length}
+      </p>
       {/* </button> */}
       {/* <button className="arrowPrevious"> */}
 
       {/* </button> */}
       {pictures.map((picture, index) => {
         return (
-          <>
-            <img
-              key={`${picture}-${index}`}
-              src={picture}
-              alt="photos de l'appartement"
-              className="image"
-            />
-          </>
+          <div
+            className={index === current ? 'slide active' : 'slide'}
+            key={index}
+          >
+            {index === current && (
+              <img
+                key={`${picture}-${index}`}
+                src={picture}
+                alt="photos de l'appartement"
+                className="image"
+              />
+            )}
+            {console.log('current/index', current, index)}
+          </div>
         )
       })}
       {/* <img src={pictures[0]} alt="appartement" /> */}

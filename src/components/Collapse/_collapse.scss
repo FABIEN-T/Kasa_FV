@@ -1,8 +1,8 @@
 .chevronDown {
-  transform: rotate(0);
+  transform: rotate(180deg);
 }
 
 .chevronUp {
-  transform: rotate(180deg);
+  transform: rotate(0);
   // animation: ease-in-out
 }
