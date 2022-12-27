@@ -10,24 +10,28 @@
   .headerLogo {
     height: 68px;
   }
-  .headernavBar {
+  .navBar {
     font: {
       size: 24px;
       weight: 500;
     }
-    .navBar {
+
+    .navBarLink {
       color: $primary;
       margin-left: 20px;
       text-decoration: none;
+      // :hover {
+      //   text-decoration: underline;
+      // }
+      // .active {
+      //   text-decoration: underline;
+      // }
     }
-    .navBar.active {
-      text-decoration-line: underline;
+    .navBarLink:hover {
+      text-decoration: underline;
     }
-    .navBar:hover {
-      text-decoration-line: underline;
+    .navBarLink.active {
+      text-decoration: underline;
     }
-    // .navBar.active {
-    //   text-decoration-line: underline;
-    // }
   }
 }

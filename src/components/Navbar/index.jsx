@@ -1,24 +1,19 @@
-import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
-const Navbar = () => {
-  const [isOpen, setOpen] = useState(false)
-  let activeStyle = {
-    textDecoration: 'underline',
-  }
-
-  let activeClassName = 'underline'
+function Navbar() {
   return (
-    <nav>
+    <nav className="navBar">
       <NavLink
-        to="messages"
-        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        to="/"
+        // end
+        className={({ isActive }) => `navBarLink ${isActive && 'active'}`}
       >
         Accueil
       </NavLink>
       <NavLink
-        to="tasks"
-        className={({ isActive }) => (isActive ? activeClassName : undefined)}
+        to="/about"
+        // end
+        className={({ isActive }) => `navBarLink ${isActive && 'active'}`}
       >
         A propos
       </NavLink>
