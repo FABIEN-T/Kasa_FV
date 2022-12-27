@@ -7,12 +7,12 @@ function Collapse({ title, content, type }) {
   const [isOpen, setIsOpen] = useState(false)
 
   return isOpen ? (
-    <div className="aboutCollapse">
-      <div className="aboutCollapseHeader" onClick={() => setIsOpen(false)}>
+    <div className="Collapse">
+      <div className="CollapseHeader" onClick={() => setIsOpen(false)}>
         <h2>{title}</h2>
         <img src={Chevron} alt="chevron" className="chevronDown" />
       </div>
-      <div className="aboutCollapseParagrah">
+      <div className="CollapseParagrah">
         {type === 'paragraph' ? (
           <p>{content}</p>
         ) : (
@@ -25,8 +25,8 @@ function Collapse({ title, content, type }) {
       </div>
     </div>
   ) : (
-    <div className="aboutCollapse">
-      <div className="aboutCollapseHeader" onClick={() => setIsOpen(true)}>
+    <div className="Collapse">
+      <div className="CollapseHeader" onClick={() => setIsOpen(true)}>
         <h2>{title}</h2>
         <img src={Chevron} alt="chevron" className="chevronUp" />
       </div>

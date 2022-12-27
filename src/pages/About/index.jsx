@@ -1,12 +1,12 @@
 import aboutData from '../../datas/aboutData.json'
 import MountainPhoto from '../../assets/gustavo-alves-YOXSC4zRcxw-unsplash 1.jpg'
-import HeaderPage from '../../components/HeaderPage'
+import Banner from '../../components/Banner'
 import Collapse from '../../components/Collapse'
 
 function About() {
   return (
     <div>
-      <HeaderPage title={' '} image={MountainPhoto} />
+      <Banner title={' '} image={MountainPhoto} />
 
       <main className="mainAbout">
         {aboutData.map(({ title, description }, index) => (

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import arrowNext from '../../assets/arrowNext.svg'
 import arrowPrevious from '../../assets/arrowPrevious.svg'
 
-function Carousel({ pictures }) {
+function Slideshow({ pictures }) {
   const [current, setCurrent] = useState(0)
   const length = pictures.length
 
@@ -21,7 +21,10 @@ function Carousel({ pictures }) {
   // }
 
   return (
-    <section className="carousel">
+    <section className="Slideshow">
+      <p>
+        {current + 1}/{length}
+      </p>
       {/* <button className="arrowNext"> */}
       {pictures.length >= 2 ? (
         <div>
@@ -40,13 +43,6 @@ function Carousel({ pictures }) {
         </div>
       ) : null}
 
-      <p>
-        {current + 1}/{length}
-      </p>
-      {/* </button> */}
-      {/* <button className="arrowPrevious"> */}
-
-      {/* </button> */}
       {pictures.map((picture, index) => {
         return (
           <div
@@ -61,7 +57,7 @@ function Carousel({ pictures }) {
                 className="image"
               />
             )}
-            {console.log('current/index', current, index)}
+            {console.log('current/index', current, index, index === current)}
           </div>
         )
       })}
@@ -71,4 +67,4 @@ function Carousel({ pictures }) {
   )
 }
 
-export default Carousel
+export default Slideshow

@@ -1,16 +1,26 @@
-import { Link } from 'react-router-dom'
-
+import { useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
 import LogoRed from '../../assets/LOGO_Kasa.svg'
 
 function Header() {
+  // const [isOpen, setIsOpen] = useState(isOpen)
   return (
     <nav className="header">
       <img src={LogoRed} alt="logo" className="headerLogo" />
-      <div className="headerDivLink">
-        <Link to="/" className="headerLink">
+      <div className="headernavBar">
+        {/* <Link to="/" className={`navBar ${isOpen && "is-active}`}
+        >
           Accueil
         </Link>
-        <Link to="/about" className="headerLink">
+      <Link to="/about" className={`navBar ${isOpen && "is-active}`}
+        onClick={() => setIsOpen(isOpen)}
+        >
+          A propos
+        </Link> */}
+        <Link to="/" className="navBar">
+          Accueil
+        </Link>
+        <Link to="/about" className="navBar">
           A propos
         </Link>
       </div>

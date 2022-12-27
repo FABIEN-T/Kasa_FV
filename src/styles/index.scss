@@ -7,8 +7,10 @@
 @import '../components/Error/error';
 @import '../components/Tags/tags';
 @import '../components/Collapse/collapse';
+@import '../components/Banner/banner';
+@import '../components/Slideshow/slideshow';
 
-@import '../pages/pageHeader';
+// @import '../pages/pageHeader';
 @import '../pages/Home/homeMain';
 @import '../pages/LodgingSheet/lodgingSheet';
 @import '../pages/About/about';
@@ -30,5 +32,10 @@ body {
     max-width: 1240px;
     margin: auto;
     // border: 1px solid green;
+  }
+  @media screen and (max-width: 375px) {
+    .app {
+      max-width: 375px;
+    }
   }
 }
