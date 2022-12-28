@@ -1,13 +1,13 @@
 function Banner({ title, image }) {
   return (
-    <header className="pageHeader">
+    <section className="banner">
       <div className="pageTitle">
         <h1>{title}</h1>
       </div>
-      <div className="pageHeaderImg">
+      <div className="bannerImg">
         <img src={image} alt={title} />
       </div>
-    </header>
+    </section>
   )
 }
 

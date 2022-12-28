@@ -4,6 +4,7 @@ import lodgingData from '../../datas/logements.json'
 import Tags from '../../components/Tags'
 import Rating from '../../components/Rating'
 import Collapse from '../../components/Collapse'
+import LodgingSheetInfo from '../../components/LodgingSheetInfo'
 import Slideshow from '../../components/Slideshow'
 
 function LodgingSheet() {
@@ -11,7 +12,7 @@ function LodgingSheet() {
 
   const lodgingSheetSelected = lodgingData.find((lodging) => lodging.id === id)
 
-  console.log('undefined ?', lodgingSheetSelected === undefined)
+  // console.log('undefined ?', lodgingSheetSelected === undefined)
 
   const {
     title,
@@ -34,31 +35,17 @@ function LodgingSheet() {
       {!lodgingSheetSelected ? (
         <h1>Redirection...</h1>
       ) : (
-        <div className="lodgingSheet">
-          {/* {console.log('idDown', lodgingSheetSelected.id === id)} */}
+        <main className="lodgingSheet">
           <Slideshow pictures={pictures} />
+          <section>
+            <LodgingSheetInfo title={title} location={location} host={host} />
+            <article className="tagsScore">
+              <Tags tags={tags} />
+              <Rating rating={rating} />
+            </article>
+          </section>
 
-          <header className="lodgingSheetHeader">
-            <div className="headerLeft">
-              <h1>{title}</h1>
-              <p>{location}</p>
-            </div>
-            <div className="headerRight">
-              <div className="nameSeller">
-                <p>{host.name.split(' ')[0]}</p>
-                <p>{host.name.split(' ')[1]}</p>
-              </div>
-              <div className="photoSeller">
-                <img src={host.picture} alt={host.name} />
-              </div>
-            </div>
-          </header>
-          <div className="tagsScore">
-            <Tags tags={tags} />
-            <Rating rating={rating} />
-          </div>
-
-          <div className="article">
+          <section className="descriptionEquipement">
             <Collapse
               title={'Description'}
               content={description}
@@ -69,8 +56,8 @@ function LodgingSheet() {
               content={equipments}
               type={'list'}
             />
-          </div>
-        </div>
+          </section>
+        </main>
       )}
     </>
   )

@@ -1,118 +1,19 @@
 .lodgingSheet {
-  // .Slideshow {
-  //   position: relative;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   width: 100%;
-  //   height: 415px;
-  //   border-radius: 25px;
-  //   overflow: hidden;
-  //   // border: 1px solid red;
-  //   // img {
-  //   //   //   flex: 1;
-  //   //   width: 100%;
-  //   //   height: 100%;
-  //   //   // display: table-cell;
-  //   //   //   overflow: hidden;
-  //   //   object-fit: cover;
-  //   //   object-position: center;
-  //   // }
-  //   // .arrows {
-  //   //   // display: table;
-  //   //   // z-index: 10;
-  //   //   left: 0px;
-  //   //   top: 0px;
-  //   //   width: 100%;
-  //   //   height: 100%;
-  //   //   border: red solid 1px;
-
-  //   .arrowNext {
-  //     position: absolute;
-  //     height: 79px;
-  //     width: 47px;
-  //     top: 40%;
-  //     right: 23px;
-  //     z-index: 10;
-  //     cursor: pointer;
-  //     user-select: none;
-  //   }
-  //   .arrowPrevious {
-  //     position: absolute;
-  //     height: 79px;
-  //     width: 47px;
-  //     top: 40%;
-  //     left: 23px;
-  //     z-index: 10;
-  //     cursor: pointer;
-  //     user-select: none;
-  //   }
-  //   p {
-  //     position: absolute;
-  //     margin: 0;
-  //     padding: 0;
-  //     bottom: 25px;
-  //     color: $fontColorLight;
-  //     font: {
-  //       size: 18px;
-  //       weight: 500;
-  //     }
-  //   }
-  //   .image {
-  //     min-width: 100%;
-  //     height: 100%;
-  //   }
-  //   .slide {
-  //     opacity: 0;
-  //     transition-duration: 0.8s ease;
-  //   }
-
-  //   .slide.active {
-  //     opacity: 1;
-  //     transition-duration: 0.8s ease;
-  //     // transform: scale(1.08);
-  //   }
-  //   // }
-  // }
-
-  .lodgingSheetHeader {
+  padding: 0 100px;
+  .descriptionEquipement {
     display: flex;
-    flex-wrap: row;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-    .headerLeft {
-      display: flex;
-      flex-direction: column;
-      h1 {
-        // border: 1px solid blue;
-        // color: aqua;
-        margin: 0 0 5px;
-        font: {
-          size: 36px;
-          weight: 500;
-        }
-      }
-      p {
-        // border: 1px solid green;
-        margin: 0;
-        font: {
-          size: 18px;
-          weight: 500;
-        }
-      }
-    }
-    .headerRight {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      // border: 1px solid blue;
-      margin-top: -5px;
-      .nameSeller {
-        // border: 1px solid green;
-        text-align: end;
-        line-height: 21px;
-        p {
+    margin: 0;
+    padding: 0;
+    .Collapse {
+      flex: 0.47;
+      margin-left: 0;
+      margin-right: 0;
+      font-size: 18px;
+      .CollapseHeader {
+        h2 {
           margin: 0;
           font: {
             size: 18px;
@@ -120,118 +21,22 @@
           }
         }
       }
-      .photoSeller {
-        margin-left: 10px;
-        width: 64px;
-        height: 64px;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          border-radius: 50%;
-        }
-      }
-    }
-  }
-  .tagsScore {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: end;
-    // border: 1px solid blue;
-    margin: 20px 0 12px;
-    // .tagsDiv {
-    //   display: flex;
-    //   .tag {
-    //     display: flex;
-    //     span {
-    //       margin: auto;
-    //     }
-    //     height: 25px;
-    //     width: 115px;
-    //     // vertical-align: middle;
-    //     // display: table-cell;
-    //     margin-right: 10px;
-    //     border-radius: 10px;
-    //     color: $fontColorLight;
-    //     background-color: $primary;
-    //   }
-    // }
-    // .score {
-    //   padding-top: 10px;
-    // }
-  }
-}
-
-.article {
-  // background-color: aquamarine;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0;
-  .Collapse {
-    // position: relative;
-    display: flex;
-    flex-direction: column;
-    flex: 0.47;
-    margin: 0px 0px 0px;
-    // border-radius: 5px;
-    .CollapseHeader {
-      //   position: absolute;
-      //   z-index: 5;
-      //   border: 1px solid green;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-sizing: border-box;
-      padding: 0 37px 0 18px;
-      background-color: $primary;
-      color: $fontColorLight;
-      width: 100%;
-      height: 47px;
-      border-radius: 5px;
-      h2 {
-        margin: 0;
-        font: {
-          size: 18px;
-          weight: 500;
-        }
-      }
-      //   .chevron {
-      //     background-color: blue;
-      //   }
-    }
-    .CollapseParagrah {
-      //   position: relative;
-      //   z-index: 1;
-      //   margin-top: 20px;
-      //   transform: translateY(25px);
-      padding: 31px 18px 18px;
-      background-color: #ddd;
-      background-color: $backgroundColor;
-      //   border: 1px solid blue;
-      border-radius: 0 0 5px 5px;
-      p {
-        margin: 0;
+      .CollapseParagrah {
         font: {
           size: 18px;
           weight: 400;
         }
-      }
-      ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        line-height: 21px;
+        p {
+          margin: 0;
+          padding: 0;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          line-height: 24px;
+        }
       }
     }
-    // .band {
-    //   width: 100%;
-    //   height: 10px;
-    //   transform: translateY(-10px);
-    //   border-radius: 5px;
-    //   background-color: $primary;
-    // }
   }
 }

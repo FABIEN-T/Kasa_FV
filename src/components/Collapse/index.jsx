@@ -1,16 +1,14 @@
 import { useState } from 'react'
 import Chevron from '../../assets/chevronDown.svg'
 
-// import ChevronUp from '../../assets/chevronUp.svg'
-
 function Collapse({ title, content, type }) {
   const [isOpen, setIsOpen] = useState(false)
 
   return isOpen ? (
-    <div className="Collapse">
+    <article className="Collapse">
       <div className="CollapseHeader" onClick={() => setIsOpen(false)}>
         <h2>{title}</h2>
-        <img src={Chevron} alt="chevron" className="chevronDown" />
+        <img src={Chevron} alt="chevron" className="chevron chevronDown" />
       </div>
       <div className="CollapseParagrah">
         {type === 'paragraph' ? (
@@ -23,14 +21,14 @@ function Collapse({ title, content, type }) {
           </ul>
         )}
       </div>
-    </div>
+    </article>
   ) : (
-    <div className="Collapse">
+    <article className="Collapse">
       <div className="CollapseHeader" onClick={() => setIsOpen(true)}>
         <h2>{title}</h2>
-        <img src={Chevron} alt="chevron" className="chevronUp" />
+        <img src={Chevron} alt="chevron" className="chevron chevronUp" />
       </div>
-    </div>
+    </article>
   )
 }
 

@@ -1,8 +1,8 @@
 .Collapse {
   display: flex;
   flex-direction: column;
-  width: 82.5%;
-  margin: 31px auto 0px;
+  margin-top: 31px;
+  margin-bottom: 0px;
   .CollapseHeader {
     display: flex;
     justify-content: space-between;
@@ -14,17 +14,9 @@
     width: 100%;
     height: 47px;
     border-radius: 5px;
-    h2 {
-      margin: 0;
-      font: {
-        size: 24px;
-        weight: 500;
-      }
-    }
     .chevronDown {
       transform: rotate(180deg);
     }
-
     .chevronUp {
       transform: rotate(0);
     }
@@ -35,11 +27,30 @@
     background-color: $backgroundColor;
     //   border: 1px solid blue;
     border-radius: 0 0 5px 5px;
-    p {
-      margin: 0;
-      font: {
-        size: 24px;
-        weight: 400;
+    margin: 0;
+  }
+  @include forMobile {
+    width: 100%;
+    margin: 20px auto 0px;
+    .CollapseHeader {
+      padding: 0 10.76px 0 11.51px;
+      height: 30px;
+      border-radius: 5px;
+      h2 {
+        font-size: 13px;
+      }
+      .chevron {
+        transform: scale(0.6);
+      }
+    }
+    .CollapseParagrah {
+      padding: 18px 18px 18px;
+      background-color: #ddd;
+      background-color: $backgroundColor;
+      //   border: 1px solid blue;
+      border-radius: 0 0 5px 5px;
+      p {
+        font-size: 12px;
       }
     }
   }

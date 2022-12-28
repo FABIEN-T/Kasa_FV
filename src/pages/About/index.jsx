@@ -5,17 +5,17 @@ import Collapse from '../../components/Collapse'
 
 function About() {
   return (
-    <div>
+    <main>
       <Banner title={' '} image={MountainPhoto} />
 
-      <main className="mainAbout">
+      <section className="about">
         {aboutData.map(({ title, description }, index) => (
           <div key={`${title}-${index}`}>
             <Collapse title={title} content={description} type={'paragraph'} />
           </div>
         ))}
-      </main>
-    </div>
+      </section>
+    </main>
   )
 }
 

@@ -1,33 +1,11 @@
-// import styled from 'styled-components'
-// import React from 'react'
 import LogoWhite from '../../assets/LOGO_Kasa_White.svg'
-// const FooterWrapper = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   background-color: black;
-//   height: 209px;
-// `
-
-// const FooterLogo = styled.img`
-//   height: 39.44px;
-//   color: white;
-// `
-
-// const Copyrights = styled.div`
-//   color: white;
-// `
 
 function Footer() {
   return (
-    // <FooterWrapper>
-    //   <FooterLogo src={Logo} alt="logo" />
-    //   <Copyrights>© 2020 Kasa. All rights reserved</Copyrights>
-    // </FooterWrapper>
-    <div className="footer">
+    <footer>
       <img src={LogoWhite} alt="logo" />
       <p className="footerCopyrights">© 2020 Kasa. All rights reserved</p>
-    </div>
+    </footer>
   )
 }
 

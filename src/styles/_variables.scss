@@ -1,3 +1,13 @@
+// Breakpoints
+$breakpoints: (
+  mobile: 375px,
+  // mobile: 450px,
+  tablet: 800px,
+);
+
+// Largeur des pages par rapport au footer
+$widthPage: 86%;
+
 // Couleur principale
 $primary: #ff6060;
 $secondary: green;

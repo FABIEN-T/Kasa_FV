@@ -1,12 +1,12 @@
 .header {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  // background-color: rgb(211, 211, 211);
   height: fit-content;
-  margin-top: 40px;
-  margin-bottom: 64px;
+  margin: 40px auto 64px;
+  width: $widthPage;
   .headerLogo {
     height: 68px;
   }
@@ -20,18 +20,35 @@
       color: $primary;
       margin-left: 20px;
       text-decoration: none;
-      // :hover {
-      //   text-decoration: underline;
-      // }
-      // .active {
-      //   text-decoration: underline;
-      // }
-    }
-    .navBarLink:hover {
-      text-decoration: underline;
+      &:hover {
+        text-decoration: underline 1.5px;
+      }
     }
     .navBarLink.active {
-      text-decoration: underline;
+      text-decoration: underline 1.5px;
+    }
+  }
+
+  @include forMobile {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    .headerLogo {
+      height: 47px;
+    }
+    .navBar {
+      font-size: 12px;
+      text-transform: uppercase;
+
+      .navBarLink {
+        margin-left: 10px;
+        &:hover {
+          text-decoration: underline 1px;
+        }
+      }
+      .navBarLink.active {
+        text-decoration: underline 1px;
+      }
     }
   }
 }

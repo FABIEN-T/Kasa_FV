@@ -57,7 +57,7 @@ function Slideshow({ pictures }) {
                 className="image"
               />
             )}
-            {console.log('current/index', current, index, index === current)}
+            {/* {console.log('current/index', current, index, index === current)} */}
           </div>
         )
       })}

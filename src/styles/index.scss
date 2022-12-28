@@ -1,16 +1,19 @@
 @import './normalize';
 
 @import './variables';
+@import './mixins';
 
 @import '../components/Header/header';
 @import '../components/Footer/footer';
 @import '../components/Error/error';
-@import '../components/Tags/tags';
 @import '../components/Collapse/collapse';
-@import '../components/Banner/banner';
+@import '../components/banner/banner';
 @import '../components/Slideshow/slideshow';
+@import '../components/LodgingSheetInfo/lodgingSheetInfo';
+@import '../components/Tags/tags';
+@import '../components/Rating/rating';
 
-@import '../pages/Home/homeMain';
+@import '../pages/Home/_homeGallery';
 @import '../pages/LodgingSheet/lodgingSheet';
 @import '../pages/About/about';
 
@@ -21,21 +24,17 @@ body {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   color: $primary;
   box-sizing: border-box;
+  // padding: 0 20px;
 
   .app {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: auto;
-    // background-color: bisque;
-    max-width: 1240px;
-    // padding: 0 10px;
-    margin: auto;
-    // border: 1px solid green;
+    max-width: 1440px;
+    // background-color: antiquewhite;
   }
-  @media screen and (max-width: 375px) {
-    .app {
-      max-width: 375px;
-    }
+  @include forMobile {
+    max-width: 375px;
   }
 }
