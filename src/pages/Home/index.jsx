@@ -5,15 +5,21 @@ import LittoralPhoto from '../../assets/IMG.jpg'
 
 function Home() {
   return (
-    <section>
-      <Banner title={'Chez vous, partout et ailleurs'} image={LittoralPhoto} />
-
-      <ul className="homeGallery">
-        {lodgingData.map(({ id, title, cover }) => (
-          <HomeCard key={id} id={id} title={title} cover={cover} />
-        ))}
-      </ul>
-    </section>
+    <main className="mainHome">
+      <div className="banner bannerImageMobile">
+        <Banner
+          title={'Chez vous, partout et ailleurs'}
+          image={LittoralPhoto}
+        />
+      </div>
+      <div className="homeGallery">
+        <ul>
+          {lodgingData.map(({ id, title, cover }) => (
+            <HomeCard key={id} id={id} title={title} cover={cover} />
+          ))}
+        </ul>
+      </div>
+    </main>
   )
 }
 

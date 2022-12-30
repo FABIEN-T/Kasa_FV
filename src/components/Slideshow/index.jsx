@@ -22,31 +22,33 @@ function Slideshow({ pictures }) {
 
   return (
     <section className="Slideshow">
-      <p>
-        {current + 1}/{length}
-      </p>
-      {/* <button className="arrowNext"> */}
       {pictures.length >= 2 ? (
         <div>
-          <img
-            src={arrowPrevious}
-            alt="arrow Previous"
-            className="arrowPrevious"
-            onClick={prevSlide}
-          />
-          <img
-            src={arrowNext}
-            alt="arrow Next"
-            className="arrowNext"
-            onClick={nextSlide}
-          />
+          <p>
+            {current + 1}/{length}
+          </p>
+          <div className="arrows">
+            <img
+              src={arrowPrevious}
+              alt="arrow Previous"
+              className="arrowPrevious"
+              onClick={prevSlide}
+            />
+            <img
+              src={arrowNext}
+              alt="arrow Next"
+              className="arrowNext"
+              onClick={nextSlide}
+            />
+          </div>
         </div>
       ) : null}
 
       {pictures.map((picture, index) => {
         return (
           <div
-            className={index === current ? 'slide active' : 'slide'}
+            className="slide"
+            // className={index === current ? 'slide active' : 'slide'}
             key={index}
           >
             {index === current && (
@@ -61,6 +63,7 @@ function Slideshow({ pictures }) {
           </div>
         )
       })}
+
       {/* <img src={pictures[0]} alt="appartement" /> */}
       {/* <div className="arrows"> */}
     </section>

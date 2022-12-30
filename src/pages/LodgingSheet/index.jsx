@@ -4,7 +4,7 @@ import lodgingData from '../../datas/logements.json'
 import Tags from '../../components/Tags'
 import Rating from '../../components/Rating'
 import Collapse from '../../components/Collapse'
-import LodgingSheetInfo from '../../components/LodgingSheetInfo'
+// import LodgingSheetInfo from '../../components/LodgingSheetInfo'
 import Slideshow from '../../components/Slideshow'
 
 function LodgingSheet() {
@@ -37,12 +37,31 @@ function LodgingSheet() {
       ) : (
         <main className="lodgingSheet">
           <Slideshow pictures={pictures} />
-          <section>
-            <LodgingSheetInfo title={title} location={location} host={host} />
-            <article className="tagsScore">
+
+          {/* <LodgingSheetInfo title={title} location={location} host={host} /> */}
+          <section className="lodgingPresentation">
+            <div className="lodgingTitleTags">
+              <article className="lodgingTitleLocation">
+                <h1>{title}</h1>
+                <p>{location}</p>
+              </article>
               <Tags tags={tags} />
-              <Rating rating={rating} />
-            </article>
+            </div>
+
+            <div className="lodgingSellerRating">
+              <div className="seller">
+                <div className="nameSeller">
+                  <p>{host.name.split(' ')[0]}</p>
+                  <p>{host.name.split(' ')[1]}</p>
+                </div>
+                <div className="photoSeller">
+                  <img src={host.picture} alt={host.name} />
+                </div>
+              </div>
+              <article className="rating">
+                <Rating rating={rating} />
+              </article>
+            </div>
           </section>
 
           <section className="descriptionEquipement">

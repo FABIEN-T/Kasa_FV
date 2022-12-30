@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 function HomeCard({ id, title, cover }) {
   return (
-    <Link key={`${id}`} to={`/lodging-sheet/${id}`}>
-      <li key={id} className="card">
+    <li key={id} className="card">
+      <Link key={`${id}`} to={`/lodging-sheet/${id}`}>
         <div className="cardTitle">
           <h2>{title}</h2>
         </div>
@@ -12,8 +12,8 @@ function HomeCard({ id, title, cover }) {
         <div className="cardPhoto">
           <img src={cover} alt={title} />
         </div>
-      </li>
-    </Link>
+      </Link>
+    </li>
   )
 }
 

@@ -4,6 +4,7 @@
   // margin-bottom: 12px;
   .tag {
     display: flex;
+    margin-bottom: 5px;
     padding: 0px 22px;
     span {
       margin: auto;
@@ -11,9 +12,14 @@
     height: 25px;
     width: fit-content;
     margin-right: 10px;
-    margin-bottom: 12px;
+    // margin-bottom: 12px;
     border-radius: 10px;
     color: $fontColorLight;
     background-color: $primary;
+    @include forMobile {
+      height: 18px;
+      font-size: 10px;
+      margin-bottom: 5px;
+    }
   }
 }

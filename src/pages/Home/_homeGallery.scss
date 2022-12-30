@@ -1,104 +1,135 @@
-.homeGallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 43px auto 0;
-  padding: 56px 50px 6px;
-  border-radius: 25px;
-  background-color: $backgroundColor;
-  width: $widthPage;
-  box-sizing: border-box;
-
-  .card {
-    position: relative;
-    //   z-index: 3;
-    overflow: hidden;
-    // border: 1px red solid;
-    // margin-left: 200px;
-    cursor: pointer;
-    width: 340px;
-    // min-width: 340px;
-    // max-width: 340px;
-    height: 340px;
-    margin-bottom: 50px;
+.mainHome {
+  margin-top: 64px;
+  .homeGallery {
+    margin: 43px auto 0;
+    padding: 3.89% 3.48% 0.42%;
+    border-radius: 25px;
+    background-color: $backgroundColor;
+    width: $widthPage;
     box-sizing: border-box;
-    // padding: 0px 20px;
-    border-radius: 10px;
 
-    //   background-color: $primary;
-
-    .cardTitle {
-      position: absolute;
-      z-index: 5;
-      margin: 20px 20px;
-      bottom: 0px;
-      min-width: 300px;
-      height: 50px;
-      // border: 1px red solid;
-      h2 {
-        z-index: 5;
-        color: $fontColorLight;
-        text-align: left;
-        font: {
-          size: 18px;
-          weight: 500;
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      // justify-content: space-evenly;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      // border: 1px green solid;
+      // margin: 0 -6.45%;
+      .card {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        width: 340px;
+        height: 340px;
+        margin-bottom: 50px;
+        border-radius: 10px;
+        .cardTitle {
+          position: absolute;
+          z-index: 5;
+          margin: 0px 20px 20px;
+          bottom: 0px;
+          height: 50px;
+          h2 {
+            z-index: 5;
+            color: $fontColorLight;
+            text-align: left;
+            font: {
+              size: 18px;
+              weight: 500;
+            }
+            margin: 0;
+            line-height: 26px;
+          }
         }
-        margin: 0;
-        line-height: 26px;
-      }
-    }
 
-    .cardGradient {
-      position: absolute;
-      z-index: 3;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(0, 0, 0, 0.5) 100%
-      );
-      // background-color: $primary;
-    }
+        .cardGradient {
+          position: absolute;
+          z-index: 3;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(0, 0, 0, 0.5) 100%
+          );
+          // background-color: $primary;
+        }
 
-    .cardPhoto {
-      z-index: 1;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
+        .cardPhoto {
+          z-index: 1;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
       }
     }
   }
-  @include forMobile {
-    padding: 56px 0px 6px;
-    background-color: #ddd;
-    width: $widthPage;
-    border: red 1px solid;
 
-    .card {
-      overflow: hidden;
-      // margin: 0;
-      // padding: 0;
-      width: 320px;
-      // min-width: auto;
-      // max-width: auto;
-      height: 255px;
-      .cardPhoto {
-        border: green solid 1px;
-        width: 100%;
-        height: 100%;
-        // img {
-        //   width: 100%;
-        //   height: 100%;
-        //   object-fit: cover;
-        //   object-position: center;
+  @include forTablet {
+    .homeGallery {
+      // padding: 56px 0px 6px;
+      padding: 3.89% 3.48% 0.42%;
+      ul .card {
+        margin: 0 auto 50px;
+        // justify-content: center;
+        // flex-direction: column;
+        // .cardPhoto {
+        //   width: 45%;
         // }
       }
+    }
+  }
+
+  @include forMobile {
+    margin-top: 16px;
+    .homeGallery {
+      margin: 0 auto;
+      padding: 0px;
+      // background-color: rgb(133, 133, 133);
+      background-color: transparent;
+      // max-width: $widthPage;
+      box-sizing: border-box;
+      ul {
+        // width: 100%;
+        .card {
+          box-sizing: border-box;
+          margin: 22px auto 0;
+          width: 100%;
+          height: 255px;
+          .cardTitle {
+            margin: 0px 20px 15px;
+          }
+          .cardPhoto {
+            // border: green solid 1px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            img {
+              width: 100%;
+              min-height: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include forMobile2 {
+    .homeGallery ul .card .cardTitle h2 {
+      // h2 {
+      font-size: 16px;
+      line-height: 20px;
+      // }
     }
   }
 }

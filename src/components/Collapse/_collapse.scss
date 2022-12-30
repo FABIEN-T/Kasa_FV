@@ -1,7 +1,6 @@
 .Collapse {
   display: flex;
   flex-direction: column;
-  margin-top: 31px;
   margin-bottom: 0px;
   .CollapseHeader {
     display: flex;
@@ -39,8 +38,11 @@
       h2 {
         font-size: 13px;
       }
-      .chevron {
-        transform: scale(0.6);
+      .chevronDown {
+        transform: rotate(180deg) scale(0.6);
+      }
+      .chevronUp {
+        transform: rotate(0) scale(0.6);
       }
     }
     .CollapseParagrah {

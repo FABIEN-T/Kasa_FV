@@ -1,55 +1,65 @@
-.about {
-  width: $widthPage;
-  margin: 0 auto;
-  .Collapse {
+.mainAbout {
+  display: flex;
+  flex-direction: column;
+  margin-top: 44px;
+  width: 100%;
+  .about {
+    display: flex;
+    flex-direction: column;
     width: 82.5%;
-    margin: 31px auto 0px;
-    .CollapseHeader {
-      h2 {
-        margin: 0;
-        font: {
-          size: 24px;
-          weight: 500;
-        }
-      }
-    }
-    .CollapseParagrah {
-      font: {
-        size: 24px;
-        weight: 400;
-      }
-      p {
-        margin: 0;
-        padding: 0;
-      }
-    }
-  }
-
-  box-sizing: border-box;
-  @include forMobile {
-    width: 100%;
-    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
     .Collapse {
       width: 100%;
-      margin: 20px auto 0px;
+      margin-top: 31px;
       .CollapseHeader {
         h2 {
           margin: 0;
           font: {
-            size: 13px;
+            size: 24px;
             weight: 500;
           }
         }
       }
       .CollapseParagrah {
-        padding: 16px 11px 11px;
         font: {
-          size: 12px;
+          size: 24px;
           weight: 400;
         }
         p {
           margin: 0;
           padding: 0;
+        }
+      }
+    }
+  }
+  @include forMobile {
+    margin-top: 20px;
+    .about {
+      width: 100%;
+      padding: 0 20px;
+      .Collapse {
+        width: 100%;
+        margin: 20px auto 0px;
+        .CollapseHeader {
+          h2 {
+            margin: 0;
+            font: {
+              size: 13px;
+              weight: 500;
+            }
+          }
+        }
+        .CollapseParagrah {
+          padding: 16px 11px 11px;
+          font: {
+            size: 12px;
+            weight: 400;
+          }
+          p {
+            margin: 0;
+            padding: 0;
+          }
         }
       }
     }

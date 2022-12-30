@@ -5,12 +5,14 @@
   justify-content: space-between;
   align-items: center;
   height: fit-content;
-  margin: 40px auto 64px;
+  margin: 40px auto 0;
   width: $widthPage;
   .headerLogo {
     height: 68px;
   }
   .navBar {
+    display: flex;
+    // flex-direction: row;
     font: {
       size: 24px;
       weight: 500;
@@ -30,9 +32,7 @@
   }
 
   @include forMobile {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 0 20px;
+    margin: 20px auto 0;
     .headerLogo {
       height: 47px;
     }
@@ -49,6 +49,13 @@
       .navBarLink.active {
         text-decoration: underline 1px;
       }
+    }
+  }
+
+  @include forMobile2 {
+    flex-direction: column;
+    .headerLogo {
+      margin-bottom: 8px;
     }
   }
 }

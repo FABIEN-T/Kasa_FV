@@ -1,5 +1,6 @@
 .mainError {
-  margin: 72px auto 0px;
+  margin: 124px auto 0px;
+  padding: 0 10px;
   text-align: center;
   h1 {
     margin: 0 auto 36px;
@@ -23,6 +24,13 @@
       weight: 500;
     }
   }
+  @include forTablet {
+    h1 {
+      // margin: 0 auto 10px;
+      font-size: 220px;
+    }
+  }
+
   @include forMobile {
     margin: 120px auto 0px;
     h1 {
