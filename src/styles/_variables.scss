@@ -1,8 +1,10 @@
 // Breakpoints
 $breakpoints: (
-  mobile: 522px,
-  mobile2: 338px,
+  // tablet : gallerie, jsutify-content passe de space-between à center
   tablet: 900px,
+  mobile: 522px,
+  // mobile2: réagencement du header, logo et navbar en colonne et centrés
+  mobile2: 338px
 );
 
 // Largeur des pages par rapport au footer
@@ -10,7 +12,9 @@ $widthPage: 88.8%;
 
 // Couleur principale
 $primary: #ff6060;
-$secondary: green;
 
+// Couleur de la police claire
 $fontColorLight: white;
+
+// Couleur du fond (gallerie)
 $backgroundColor: #f6f6f6;
