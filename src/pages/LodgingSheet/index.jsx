@@ -36,7 +36,7 @@ function LodgingSheet() {
           <section className="lodgingPresentation">
             <div className="lodgingTitleTags">
               <article className="lodgingTitleLocation">
-                <h1>{title}</h1>
+                <h2>{title}</h2>
                 <p>{location}</p>
               </article>
               <Tags tags={tags} />

@@ -6,12 +6,6 @@
   }
 }
 
-@mixin forTablet2 {
-  @media screen and (max-width: map-get($breakpoints, tablet2)) {
-    @content;
-  }
-}
-
 // Media queries pour MOBILE avec map définie dans _variables.scss
 
 @mixin forMobile {

@@ -7,13 +7,9 @@ function Rating({ rating }) {
     <div>
       {range.map((rangeElement) =>
         rating >= rangeElement ? (
-          // <div>
           <img key={rangeElement.toString()} src={starRed} alt="starRed" />
         ) : (
-          // </div>
-          // <div>
           <img key={rangeElement.toString()} src={starGrey} alt="starGrey" />
-          // </div>
         )
       )}
     </div>

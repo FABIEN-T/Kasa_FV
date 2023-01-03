@@ -12,20 +12,11 @@
       list-style-type: none;
       display: flex;
       flex-wrap: wrap;
-      // justify-content: space-between;
       justify-content: space-evenly;
       margin: 0vw -0.9vw;
       padding: 0;
     }
   }
-
-  // @include forTablet2 {
-  //   .homeGallery {
-  //     ul {
-  //       flex-direction: column;
-  //     }
-  //   }
-  // }
 
   @include forMobile {
     margin-top: 16px;
@@ -33,7 +24,6 @@
       margin: 0 auto;
       padding: 0px;
       background-color: transparent;
-      box-sizing: border-box;
     }
   }
 }

@@ -14,12 +14,6 @@ function Slideshow({ pictures }) {
     setCurrent(current === length - 1 ? 0 : current + 1)
   }
 
-  // console.log('current', current)
-
-  // if (Array.isArray(pictures) || pictures.length <= 0) {
-  //   return null
-  // }
-
   return (
     <section className="Slideshow">
       {pictures.length >= 2 ? (
@@ -46,11 +40,7 @@ function Slideshow({ pictures }) {
 
       {pictures.map((picture, index) => {
         return (
-          <div
-            className="slide"
-            // className={index === current ? 'slide active' : 'slide'}
-            key={index}
-          >
+          <div className="slide" key={index}>
             {index === current && (
               <img
                 key={`${picture}-${index}`}
@@ -59,13 +49,9 @@ function Slideshow({ pictures }) {
                 className="image"
               />
             )}
-            {/* {console.log('current/index', current, index, index === current)} */}
           </div>
         )
       })}
-
-      {/* <img src={pictures[0]} alt="appartement" /> */}
-      {/* <div className="arrows"> */}
     </section>
   )
 }

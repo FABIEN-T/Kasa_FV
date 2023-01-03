@@ -14,47 +14,12 @@
       height: 68px;
     }
   }
-  // .navBar {
-  //   display: flex;
-  //   font: {
-  //     size: 24px;
-  //     weight: 500;
-  //   }
-
-  //   .navBarLink {
-  //     color: $primary;
-  //     margin-left: 20px;
-  //     text-decoration: none;
-  //     &:hover {
-  //       // text-decoration: underline 0.2rem;
-  //       border-bottom: 2px solid $primary;
-  //     }
-  //   }
-  //   .navBarLink.active {
-  //     // text-decoration: underline 1.5px;
-  //     border-bottom: 2px solid $primary;
-  //   }
-  // }
 
   @include forMobile {
     margin: 20px auto 0;
     h1 .headerLogo {
       height: 47px;
     }
-    // .navBar {
-    //   font-size: 12px;
-    //   text-transform: uppercase;
-
-    //   .navBarLink {
-    //     margin-left: 10px;
-    //     &:hover {
-    //       text-decoration: underline 1px;
-    //     }
-    //   }
-    //   .navBarLink.active {
-    //     text-decoration: underline 1px;
-    //   }
-    // }
   }
 
   @include forMobile2 {

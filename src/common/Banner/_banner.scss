@@ -8,11 +8,6 @@
   box-sizing: border-box;
 
   .pageTitle {
-    // border: 1px green solid;
-    // background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    //   url('../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg');
-    // background-size: cover;
-    // background-position: center;
     box-sizing: border-box;
     position: absolute;
     left: 0px;
@@ -22,10 +17,8 @@
     height: 100%;
     text-align: center;
     color: $fontColorLight;
-    // background-color: rgba(0, 0, 0, 0.3);
     padding: 0 5px;
     h2 {
-      // color: black;
       vertical-align: middle;
       display: table-cell;
       font: {
@@ -51,24 +44,7 @@
     }
   }
 
-  // .bannerImg {
-  //   position: absolute;
-  //   z-index: 1;
-  //   width: 100%;
-  //   height: 100%;
-  //   img {
-  //     width: 100%;
-  //     height: 100%;
-  //     object-fit: cover;
-  //     object-position: center;
-  //   }
-  // }
-
   @include forMobile {
-    // height: 111px;
-    // .bannerImageMobile {
-    //   height: 111px;
-    // }
     .pageTitle {
       max-width: 100%;
       padding: 0 16px;
@@ -78,18 +54,6 @@
         font-size: 24px;
       }
     }
-    // .bannerImg {
-    //   margin: 0 auto;
-    //   // border: 1px red solid;
-    //   // height: 100%;
-    //   // width: 100%;
-    //   object-fit: none;
-    //   object-position: center;
-    //   img {
-    //     width: auto;
-    //     height: 100%;
-    //   }
-    // }
   }
 }
 
