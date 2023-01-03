@@ -1,5 +1,5 @@
 .mainHome {
-  margin-top: 64px;
+  margin-top: 59px;
   .homeGallery {
     margin: 43px auto 0;
     padding: 3.89% 3.52% 0.42%;
@@ -18,13 +18,13 @@
     }
   }
 
-  @include forTablet2 {
-    .homeGallery {
-      ul {
-        flex-direction: column;
-      }
-    }
-  }
+  // @include forTablet2 {
+  //   .homeGallery {
+  //     ul {
+  //       flex-direction: column;
+  //     }
+  //   }
+  // }
 
   @include forMobile {
     margin-top: 16px;

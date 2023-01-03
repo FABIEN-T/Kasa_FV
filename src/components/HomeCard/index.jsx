@@ -6,6 +6,8 @@ function HomeCard({ id, title, cover }) {
     <li key={id} className="card">
       <Link key={`${id}`} to={`/lodging-sheet/${id}`}>
         <div className="cardTitle">
+          {/* <p>{title}</p> */}
+          {/* <span>{title}</span> */}
           <h3>{title}</h3>
         </div>
         <div className="cardGradient"></div>
