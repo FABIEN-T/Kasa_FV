@@ -3,18 +3,21 @@
 @import './variables';
 @import './mixins';
 
+@import '../common/Collapse/collapse';
+@import '../common/Banner/banner';
+
 @import '../components/Header/header';
+@import '../components/Navbar/navbar';
 @import '../components/Footer/footer';
-@import '../components/Error/error';
-@import '../components/Collapse/collapse';
-@import '../components/banner/banner';
+@import '../components/HomeCard/homeCard';
 @import '../components/Slideshow/slideshow';
 @import '../components/Tags/tags';
 @import '../components/Rating/rating';
 
-@import '../pages/Home/_homeGallery';
+@import '../pages/Home/homeGallery';
 @import '../pages/LodgingSheet/lodgingSheet';
 @import '../pages/About/about';
+@import '../pages/Error/error';
 
 /* Lien des polices google */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');

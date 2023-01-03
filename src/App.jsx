@@ -5,7 +5,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import LodgingSheet from './pages/LodgingSheet'
-import Error from './components/Error'
+import Error from './pages/Error'
 
 function App() {
   return (

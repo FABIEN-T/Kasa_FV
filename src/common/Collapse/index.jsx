@@ -7,7 +7,7 @@ function Collapse({ title, content, type }) {
   return isOpen ? (
     <article className="Collapse">
       <div className="CollapseHeader" onClick={() => setIsOpen(false)}>
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         <img src={Chevron} alt="chevron" className="chevronDown" />
       </div>
       <div className="CollapseParagrah">
@@ -25,7 +25,7 @@ function Collapse({ title, content, type }) {
   ) : (
     <article className="Collapse">
       <div className="CollapseHeader" onClick={() => setIsOpen(true)}>
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         <img src={Chevron} alt="chevron" className="chevronUp" />
       </div>
     </article>

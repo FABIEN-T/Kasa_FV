@@ -1,7 +1,6 @@
 import lodgingData from '../../datas/logements.json'
-import Banner from '../../components/Banner'
+import Banner from '../../common/Banner'
 import HomeCard from '../../components/HomeCard'
-import LittoralPhoto from '../../assets/IMG.jpg'
 
 function Home() {
   return (
@@ -9,7 +8,7 @@ function Home() {
       <div className="banner bannerImageMobile">
         <Banner
           title={'Chez vous, partout et ailleurs'}
-          image={LittoralPhoto}
+          imageBanner="bannerMountain"
         />
       </div>
       <div className="homeGallery">

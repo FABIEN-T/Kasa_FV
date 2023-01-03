@@ -1,13 +1,12 @@
 import aboutData from '../../datas/aboutData.json'
-import MountainPhoto from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg'
-import Banner from '../../components/Banner'
-import Collapse from '../../components/Collapse'
+import Banner from '../../common/Banner'
+import Collapse from '../../common/Collapse'
 
 function About() {
   return (
     <main className="mainAbout">
       <div className="banner">
-        <Banner title={' '} image={MountainPhoto} />
+        <Banner title={'Paysage montagneux'} imageBanner="bannerLittoral" />
       </div>
 
       <section className="about">

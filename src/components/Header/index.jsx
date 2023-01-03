@@ -1,10 +1,16 @@
-import Navbar from '../Navbar'
+import Navbar from '../../components/Navbar'
 import LogoRed from '../../assets/LOGO_Kasa.svg'
 
 function Header() {
   return (
     <header className="header">
-      <img src={LogoRed} alt="logo Kasa" className="headerLogo" />
+      <h1>
+        <img
+          src={LogoRed}
+          alt="Logo de l'entreprise Kasa"
+          className="headerLogo"
+        />
+      </h1>
       <Navbar />
     </header>
   )

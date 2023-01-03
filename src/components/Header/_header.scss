@@ -7,54 +7,59 @@
   height: fit-content;
   margin: 40px auto 0;
   width: $widthPage;
-  .headerLogo {
-    height: 68px;
-  }
-  .navBar {
-    display: flex;
-    // flex-direction: row;
-    font: {
-      size: 24px;
-      weight: 500;
+  h1 {
+    margin: 0;
+    padding: 0;
+    .headerLogo {
+      height: 68px;
     }
+  }
+  // .navBar {
+  //   display: flex;
+  //   font: {
+  //     size: 24px;
+  //     weight: 500;
+  //   }
 
-    .navBarLink {
-      color: $primary;
-      margin-left: 20px;
-      text-decoration: none;
-      &:hover {
-        text-decoration: underline 1.5px;
-      }
-    }
-    .navBarLink.active {
-      text-decoration: underline 1.5px;
-    }
-  }
+  //   .navBarLink {
+  //     color: $primary;
+  //     margin-left: 20px;
+  //     text-decoration: none;
+  //     &:hover {
+  //       // text-decoration: underline 0.2rem;
+  //       border-bottom: 2px solid $primary;
+  //     }
+  //   }
+  //   .navBarLink.active {
+  //     // text-decoration: underline 1.5px;
+  //     border-bottom: 2px solid $primary;
+  //   }
+  // }
 
   @include forMobile {
     margin: 20px auto 0;
-    .headerLogo {
+    h1 .headerLogo {
       height: 47px;
     }
-    .navBar {
-      font-size: 12px;
-      text-transform: uppercase;
+    // .navBar {
+    //   font-size: 12px;
+    //   text-transform: uppercase;
 
-      .navBarLink {
-        margin-left: 10px;
-        &:hover {
-          text-decoration: underline 1px;
-        }
-      }
-      .navBarLink.active {
-        text-decoration: underline 1px;
-      }
-    }
+    //   .navBarLink {
+    //     margin-left: 10px;
+    //     &:hover {
+    //       text-decoration: underline 1px;
+    //     }
+    //   }
+    //   .navBarLink.active {
+    //     text-decoration: underline 1px;
+    //   }
+    // }
   }
 
   @include forMobile2 {
     flex-direction: column;
-    .headerLogo {
+    h1 .headerLogo {
       margin-bottom: 8px;
     }
   }

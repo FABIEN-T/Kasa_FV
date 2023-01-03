@@ -3,16 +3,13 @@ import { useEffect } from 'react'
 import lodgingData from '../../datas/logements.json'
 import Tags from '../../components/Tags'
 import Rating from '../../components/Rating'
-import Collapse from '../../components/Collapse'
-// import LodgingSheetInfo from '../../components/LodgingSheetInfo'
+import Collapse from '../../common/Collapse'
 import Slideshow from '../../components/Slideshow'
 
 function LodgingSheet() {
   const { id } = useParams()
 
   const lodgingSheetSelected = lodgingData.find((lodging) => lodging.id === id)
-
-  // console.log('undefined ?', lodgingSheetSelected === undefined)
 
   const {
     title,
@@ -28,8 +25,6 @@ function LodgingSheet() {
   const navigate = useNavigate()
   useEffect(() => (!lodgingSheetSelected ? navigate('/*') : undefined))
 
-  // console.log('idUp', lodgingSheetSelected.id === id)
-
   return (
     <>
       {!lodgingSheetSelected ? (
@@ -38,7 +33,6 @@ function LodgingSheet() {
         <main className="lodgingSheet">
           <Slideshow pictures={pictures} />
 
-          {/* <LodgingSheetInfo title={title} location={location} host={host} /> */}
           <section className="lodgingPresentation">
             <div className="lodgingTitleTags">
               <article className="lodgingTitleLocation">

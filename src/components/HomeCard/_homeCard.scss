@@ -1,0 +1,95 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  width: 29.3%;
+  min-height: 340px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  .cardTitle {
+    position: absolute;
+    z-index: 5;
+    margin: 0px 20px 20px;
+    bottom: 0px;
+    // max-width: 100%;
+    height: 50px;
+    // display: -webkit-box;
+    // -webkit-line-clamp: 8;
+    // -webkit-box-orient: vertical;
+    // text-overflow: ellipsis;
+    // overflow: hidden;
+    h3 {
+      z-index: 5;
+      color: $fontColorLight;
+      text-align: left;
+      font: {
+        size: 18px;
+        weight: 500;
+      }
+      margin: 0;
+      line-height: 26px;
+    }
+  }
+
+  .cardGradient {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  }
+
+  .cardPhoto {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  @include forTablet {
+    width: 45%;
+  }
+
+  @include forTablet2 {
+    width: 410px;
+    margin: 22px auto 0;
+  }
+
+  @include forMobile {
+    box-sizing: border-box;
+    // margin: 22px auto 0;
+    width: 100%;
+    height: 255px;
+    .cardTitle {
+      margin: 0px 20px 15px;
+    }
+    .cardPhoto {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+
+  @include forMobile2 {
+    .cardTitle h3 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
