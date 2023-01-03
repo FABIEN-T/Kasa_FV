@@ -1,7 +1,7 @@
 .mainAbout {
   display: flex;
   flex-direction: column;
-  margin-top: 44px;
+  margin-top: 39px;
   width: 100%;
   .about {
     display: flex;
@@ -34,7 +34,7 @@
     }
   }
   @include forMobile {
-    margin-top: 20px;
+    margin-top: 15px;
     .about {
       width: 100%;
       padding: 0 20px;

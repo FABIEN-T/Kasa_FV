@@ -12,9 +12,10 @@
       list-style-type: none;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-evenly;
-      margin: 0vw -0.9vw;
+      justify-content: space-between;
+      margin: 0 auto;
       padding: 0;
+      box-sizing: border-box;
     }
   }
 
