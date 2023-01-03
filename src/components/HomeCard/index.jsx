@@ -1,13 +1,10 @@
 import { Link } from 'react-router-dom'
-// import lodgingData from '../../datas/logements.json'
 
 function HomeCard({ id, title, cover }) {
   return (
     <li key={id} className="card">
       <Link key={`${id}`} to={`/lodging-sheet/${id}`}>
         <div className="cardTitle">
-          {/* <p>{title}</p> */}
-          {/* <span>{title}</span> */}
           <h3>{title}</h3>
         </div>
         <div className="cardGradient"></div>
