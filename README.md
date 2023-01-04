@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Projet Kasa
+
+Contexte : Kasa est dans le métier de la location d’appartements entre particuliers depuis 10 ans.
+Le site a été codé à cette époque, le code legacy est important.
+Une refonte totale a été décidée en utilisant la bibliothèque React côté front-end.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

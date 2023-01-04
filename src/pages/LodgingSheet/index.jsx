@@ -8,7 +8,6 @@ import Slideshow from '../../components/Slideshow'
 
 function LodgingSheet() {
   const { id } = useParams()
-
   const lodgingSheetSelected = lodgingData.find((lodging) => lodging.id === id)
 
   const {
@@ -21,9 +20,6 @@ function LodgingSheet() {
     equipments,
     tags,
   } = lodgingSheetSelected ?? {}
-  // ?? : opérateur de coalescence des nuls,
-  // l'opérande de gauche sera renvoyé s'il s'agit d'une valeur équivalente
-  // à false qui n'est ni null, ni undefined
 
   const navigate = useNavigate()
   useEffect(() => (!lodgingSheetSelected ? navigate('/*') : undefined))
