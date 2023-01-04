@@ -1,6 +1,10 @@
 .lodgingSheet {
   margin: 20px auto 0;
   width: $widthPage;
+  max-width: 1280px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   .lodgingPresentation {
     margin-top: 30px;
     display: flex;

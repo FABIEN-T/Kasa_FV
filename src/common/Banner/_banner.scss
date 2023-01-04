@@ -2,6 +2,7 @@
   position: relative;
   height: 223px;
   width: $widthPage;
+  max-width: 1280px;
   margin: 0 auto;
   border-radius: 25px;
   overflow: hidden;
@@ -27,14 +28,14 @@
       }
     }
   }
-  .bannerMountain {
+  .bannerLittoral {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url('../../assets/IMG.jpg');
     background-size: cover;
     background-position: center;
   }
 
-  .bannerLittoral {
+  .bannerMountain {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url('../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg');
     background-size: cover;

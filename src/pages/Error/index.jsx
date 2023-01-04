@@ -8,7 +8,6 @@ function Error() {
       <Link to="/" className="errorLink">
         Retourner sur la page d’accueil
       </Link>
-      {/* <Link to="/*">Retourner sur la page d’accueil</Link> */}
     </main>
   )
 }
