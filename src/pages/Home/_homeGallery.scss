@@ -29,3 +29,10 @@
     }
   }
 }
+
+@include forMobile {
+  .bannerHomeMobile {
+    height: 111px;
+    border-radius: 10px;
+  }
+}

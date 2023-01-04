@@ -1,13 +1,11 @@
 import lodgingData from '../../datas/logements.json'
 import Banner from '../../common/Banner'
 import HomeCard from '../../components/HomeCard'
-// import Footer from '../../components/Footer'
 
 function Home() {
   return (
-    // <>
     <main className="mainHome">
-      <div className="banner bannerImageMobile">
+      <div className="banner bannerHomeMobile">
         <Banner
           title={'Chez vous, partout et ailleurs'}
           imageBanner="bannerLittoral"
@@ -21,8 +19,6 @@ function Home() {
         </ul>
       </div>
     </main>
-    //   <Footer />
-    // </>
   )
 }
 

@@ -1,11 +1,9 @@
 import aboutData from '../../datas/aboutData.json'
 import Banner from '../../common/Banner'
 import Collapse from '../../common/Collapse'
-// import Footer from '../../components/Footer'
 
 function About() {
   return (
-    // <div className="mainFoot">
     <main className="mainAbout">
       <div className="banner">
         <Banner
@@ -22,8 +20,6 @@ function About() {
         ))}
       </section>
     </main>
-    // <Footer />
-    // </div>
   )
 }
 
